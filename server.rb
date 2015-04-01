@@ -1,7 +1,6 @@
 require 'json'
 require 'net/http'
 require 'pty'
-require 'pry'
 
 require './launcher'
 
