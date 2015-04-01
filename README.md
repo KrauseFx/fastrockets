@@ -21,6 +21,12 @@
 Rocket launcher for fastlane
 ============================
 
+Visualize fastlane usage as rockets 🚀
+
+All you need is a Raspberry PI and a [LED Board](https://learn.adafruit.com/connecting-a-16x32-rgb-led-matrix-panel-to-a-raspberry-pi/you-will-need).
+
+Each tool looks for updates when it's launched. The update checker is also open source as [refresher](https://github.com/fastlane/refresher).
+
 [![Twitter: @KauseFx](https://img.shields.io/badge/contact-@KrauseFx-blue.svg?style=flat)](https://twitter.com/KrauseFx)
 
 ![assets/picture.jpg](assets/picture.jpg)
@@ -28,7 +34,7 @@ Rocket launcher for fastlane
 
 ## Building the LED Board
 
-[adafruit](https://learn.adafruit.com/connecting-a-16x32-rgb-led-matrix-panel-to-a-raspberry-pi/you-will-need) shows a step by step guide what do buy and how to connect the board to get the LED Board running.
+[adafruit](https://learn.adafruit.com/connecting-a-16x32-rgb-led-matrix-panel-to-a-raspberry-pi/you-will-need) shows a step by step guide what to buy and how to connect the board to get the LED Board running.
 
 Costs for the LED board around 55 Euro.
 
