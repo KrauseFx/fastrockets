@@ -3,8 +3,8 @@ user = ENV["RASPBERRY_USER"] || "pi"
 folder = ENV["RASPBERRY_FOLDER"] || "/home/pi/fastrockets/"
 
 task :transfer do
-  sh "gcc c.c"
-  sh "sshpass -p '#{ENV["RASPBERRY_PASS"]}' scp *.out *.rb #{user}@#{pi}:#{folder}"
+  sh "sshpass -p '#{ENV["RASPBERRY_PASS"]}' scp *.cc Makefile #{user}@#{pi}:#{folder}"
+  sh "sshpass -p '#{ENV["RASPBERRY_PASS"]}' ssh #{user}@#{pi} -t 'cd #{folder}; make; sudo ruby server.rb'"
 end
 
 task :default => [:transfer]
