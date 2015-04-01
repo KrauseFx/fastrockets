@@ -7,4 +7,10 @@ task :transfer do
   sh "sshpass -p '#{ENV["RASPBERRY_PASS"]}' ssh #{user}@#{pi} -t 'cd #{folder}; make; sudo ruby server.rb'"
 end
 
-task :default => [:transfer]
+task :run do
+  sh "cd rpi-rgb-led-matrix && make"
+  sh "make"
+  sh "sudo ruby server.rb"
+end
+
+task :default => [:run]
