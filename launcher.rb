@@ -9,7 +9,7 @@ module FastRockets
     end
 
     def fire!(tool_name)
-      if recent_launches.count >= WIDTH / 2.0
+      if recent_launches.count >= WIDTH * 0.75
         tow_away_a_rockt_and_file_a_traffic_ticket # make space for more rockets
       end
 

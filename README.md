@@ -18,7 +18,7 @@
 </p>
 -------
 
-Rocket launches for fastlane
+Rocket launcher for fastlane
 ============================
 
 [![Twitter: @KauseFx](https://img.shields.io/badge/contact-@KrauseFx-blue.svg?style=flat)](https://twitter.com/KrauseFx)
