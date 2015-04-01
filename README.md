@@ -25,7 +25,9 @@ Rocket launches for fastlane
 
 ## Starting the script
 
-    ruby server.rb
+    sudo ruby server.rb
+
+The `sudo` is required, as the LED displays requires `sudo` privileges. 
 
 This will use the c program under the hood to control the LED display.
 
