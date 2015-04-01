@@ -28,8 +28,7 @@ PTY.spawn(command) do |stdout, stdin, pid|
       end
     end
     last_result = launches
-    last_result['deliver'] -= 1
-    sleep 1.0
+    sleep 3.0
 
     stdin.puts "-1"
   end
