@@ -42,11 +42,9 @@ Costs for the LED board around 55 Euro.
 
 ## Starting the script
 
-    sudo ruby server.rb
+    rake
 
-The `sudo` is required, as the LED displays requires `sudo` privileges. 
-
-This will use the c program under the hood to control the LED display.
+The `rake` task will first compile the LED library, then the `C` program used to show the rockets and then launch the `Ruby` script to start launching rockets.
 
 # fastlane
 
