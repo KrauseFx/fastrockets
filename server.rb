@@ -7,8 +7,7 @@ require './launcher'
 
 SERVER_URL = "https://refresher.fastlane.tools/"
 
-# command = "./minimal-example"
-command = "ls"
+command = "./minimal-example"
 
 last_result = nil
 
@@ -24,7 +23,7 @@ PTY.spawn(command) do |stdout, stdin, pid|
       diff.each do |tool_name, launches|
         while launches > 0
           value = launcher.fire!(tool_name)
-          puts value
+          stdin.puts value
           launches -= 1
         end
       end
@@ -33,6 +32,6 @@ PTY.spawn(command) do |stdout, stdin, pid|
     last_result['deliver'] -= 1
     sleep 1.0
 
-    puts "-1"
+    stdin.puts "-1"
   end
 end
