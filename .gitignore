@@ -34,3 +34,8 @@ build/
 # unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
 .rvmrc
 a.out
+/Makefile~
+/minimal-example
+*.cc~
+*.o
+/Rakefile~
