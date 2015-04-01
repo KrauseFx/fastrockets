@@ -7,7 +7,7 @@ require './launcher'
 
 SERVER_URL = "http://fastlane-refresher.herokuapp.com/"
 
-command = "./minimal-example"
+command = "./renderer"
 
 last_result = nil
 
