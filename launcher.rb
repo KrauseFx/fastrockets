@@ -14,7 +14,7 @@ module FastRockets
       end
 
       color = Tools.color_for_tool(tool_name)
-      puts "Launching rocket '#{tool_name}' with color #{color}  3....2....1.....🚀"
+      puts "Launching rocket '#{tool_name}' with color #{color}  3....2....1....."
 
       x = -1
       loop do
