@@ -23,7 +23,7 @@ Rocket launcher for fastlane
 
 [![Twitter: @KauseFx](https://img.shields.io/badge/contact-@KrauseFx-blue.svg?style=flat)](https://twitter.com/KrauseFx)
 
-Visualize fastlane usage as rockets 🚀
+Visualize fastlane launches as rockets 🚀
 
 Every time one of the [fastlane tools](https://fastlane.tools) is launched, a rocket will be launched from the bottom of the LED board in the color of the corresponding tool.
 
