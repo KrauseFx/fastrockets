@@ -1,6 +1,6 @@
 CXXFLAGS=-Wall -O3 -g
-OBJECTS=minimal-example.o
-BINARIES=minimal-example
+OBJECTS=renderer.o
+BINARIES=renderer
 ALL_BINARIES="$(BINARIES)"
 
 # Where our library resides. It is split between includes and the binary
@@ -11,8 +11,8 @@ RGB_LIBRARY_NAME=rgbmatrix
 RGB_LIBRARY=$(RGB_LIBDIR)/lib$(RGB_LIBRARY_NAME).a
 LDFLAGS+=-L$(RGB_LIBDIR) -l$(RGB_LIBRARY_NAME) -lrt -lm -lpthread
 
-minimal-example : minimal-example.o $(RGB_LIBRARY)
-	$(CXX) $(CXXFLAGS) minimal-example.o -o $@ $(LDFLAGS)
+renderer : renderer.o $(RGB_LIBRARY)
+	$(CXX) $(CXXFLAGS) renderer.o -o $@ $(LDFLAGS)
 
 clean:
 	rm -f $(OBJECTS) $(ALL_BINARIES)
