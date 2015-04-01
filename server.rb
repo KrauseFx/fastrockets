@@ -4,7 +4,7 @@ require 'pty'
 
 require './launcher'
 
-SERVER_URL = "https://refresher.fastlane.tools/"
+SERVER_URL = "https://fastlane-refresher.herokuapp.com/"
 
 command = "./minimal-example"
 
