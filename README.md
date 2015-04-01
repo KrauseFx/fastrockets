@@ -23,6 +23,15 @@ Rocket launcher for fastlane
 
 [![Twitter: @KauseFx](https://img.shields.io/badge/contact-@KrauseFx-blue.svg?style=flat)](https://twitter.com/KrauseFx)
 
+![assets/picture.jpg](assets/picture.jpg)
+![assets/animated.gif](assets/animated.gif)
+
+## Building the LED Board
+
+[adafruit](https://learn.adafruit.com/connecting-a-16x32-rgb-led-matrix-panel-to-a-raspberry-pi/you-will-need) shows a step by step guide what do buy and how to connect the board to get the LED Board running.
+
+Costs for the LED board around 55 Euro.
+
 ## Starting the script
 
     sudo ruby server.rb
