@@ -24,7 +24,9 @@ module FastRockets
 
       recent_launches << x
 
-      color << x
+      color << x # the X position of the rocket
+      color << Random.rand # that's the speed
+
       return color
     end
 

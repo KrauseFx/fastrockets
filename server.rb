@@ -53,7 +53,7 @@ PTY.spawn(command) do |stdout, stdin, pid|
       end
     end
     last_result = launches
-    sleep 3.0
+    sleep 0.017
 
     puts "-1"
     stdin.puts "-1"
