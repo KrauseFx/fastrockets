@@ -25,7 +25,7 @@ Thread.new do
     mutex.synchronize do
       @current = launches
     end
-    sleep 5.0
+    sleep 10.0
   end
 end
 
