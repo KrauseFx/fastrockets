@@ -15,7 +15,8 @@ module FastRockets
           sigh: [31, 188, 210],
           produce: [252, 214, 72],
           cert: [96, 125, 140],
-          codes: [121, 85, 72]
+          codes: [121, 85, 72],
+          pilot: [76, 163, 235]
         }
       end
   end
