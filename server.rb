@@ -1,5 +1,5 @@
 require 'json'
-require 'net/http'
+require 'excon'
 require 'pty'
 require 'thread'
 
@@ -21,7 +21,7 @@ mutex = Mutex.new
 ############# Network Thread #############
 Thread.new do
   loop do
-    launches = JSON.parse(Net::HTTP.get(URI.parse(SERVER_URL)))
+    launches = JSON.parse(Excon.get(SERVER_URL).body)
     mutex.synchronize do
       @current = launches
     end
