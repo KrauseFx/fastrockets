@@ -18,8 +18,14 @@ module FastRockets
 
       x = -1
       loop do
-        x = Random.rand(WIDTH)
-        break unless recent_launches.include?x
+        x = Random.rand(WIDTH) || -1
+        if recent_launches.include?x
+          # repeat
+        else
+          if x > -1
+            break
+          end
+        end
       end
 
       recent_launches << x
