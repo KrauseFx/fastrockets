@@ -42,9 +42,17 @@ Costs for the LED board around 55 Euro.
 
 ## Starting the script
 
+Make sure to clone all submodule
+
+    git submodule update --init --recursive
+
+Run the server using
+
     rake
 
 The `rake` task will first compile the LED library, then the `C` program used to show the rockets and then launch the `Ruby` script to start launching rockets.
+
+**Note**: This will only work on the Raspberry PI itself, not on your Mac, as it requires a Linux environment.
 
 # fastlane
 
