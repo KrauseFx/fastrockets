@@ -1,0 +1,12 @@
+GEM
+  specs:
+    excon (0.45.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  excon
+
+BUNDLED WITH
+   1.10.6
